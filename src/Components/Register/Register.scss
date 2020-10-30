@@ -1,0 +1,60 @@
+@import "../../BaseStyles/constants";
+
+.register {
+  margin: 6rem 0 1rem 0;
+
+  &__form {
+    width: 50%;
+    margin: auto;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+    font-family: $font-family, sans-serif, serif;
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  &__inputs {
+    width: 60%;
+    margin: auto;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    text-align: left;
+
+    input {
+      background-color: #222;
+      padding: 0.5rem 0.25rem;
+      color: #fefefe;
+      font-size: 1.25rem;
+      margin-top: 0.25rem;
+    }
+  }
+
+  &__submit {
+    margin: auto;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    background-color: inherit;
+    color: #fefefe;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    transition: 0.2s all;
+
+    &:hover {
+      transform: translateY(-0.75rem);
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.45);
+    }
+
+    &:active {
+      transform: translateY(-0.5rem);
+      box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.45);
+    }
+  }
+}

@@ -14,7 +14,7 @@ export default function Card({ name, description, time, index }) {
         <div className="card__name">{name}</div>
         <p className="card__description">{description}</p>
         <div className="card__time">
-          <span>{time}</span>
+          <i class="far fa-calendar"></i> <span>{time}</span>
         </div>
       </div>
     </div>

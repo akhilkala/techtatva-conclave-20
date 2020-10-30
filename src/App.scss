@@ -1,3 +1,5 @@
+@import "./BaseStyles/constants";
+
 .app {
   &__landing {
     min-height: 100vh;
@@ -30,12 +32,40 @@
   &__heading {
     font-size: 6rem;
     text-align: center;
+    letter-spacing: 1px;
   }
 
   &__heading-2 {
     text-align: center;
+    margin-top: -2rem;
+    font-family: $font-family, sans-serif, serif;
+  }
+
+  &__lineup {
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: $font-family, sans-serif, serif;
   }
 
   &__cards {
   }
+}
+
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 6rem;
+  text-align: center;
+  font-family: $font-family, sans-serif, serif;
+  letter-spacing: 1px;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
 }
