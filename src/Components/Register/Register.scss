@@ -5,6 +5,7 @@
 
   &__form {
     width: 50%;
+    min-width: 85vw;
     margin: auto;
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
     font-family: $font-family, sans-serif, serif;
@@ -20,6 +21,8 @@
   &__inputs {
     width: 60%;
     margin: auto;
+
+    min-width: 25rem;
   }
 
   &__input {
@@ -27,13 +30,14 @@
     flex-direction: column;
     margin: 2rem 0;
     text-align: left;
+    font-size: 1.5rem;
 
     input {
       background-color: #222;
-      padding: 0.5rem 0.25rem;
+      padding: 1rem 0.5rem;
       color: #fefefe;
-      font-size: 1.25rem;
-      margin-top: 0.25rem;
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
     }
   }
 
@@ -43,7 +47,7 @@
     padding: 1rem 2rem;
     background-color: inherit;
     color: #fefefe;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem auto;
     transition: 0.2s all;
 
