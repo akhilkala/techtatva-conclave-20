@@ -5,6 +5,7 @@
   min-height: 40vh;
   margin: 3rem 0;
   display: flex;
+  padding: 3rem;
 
   @include respond(tab-land) {
     flex-direction: column;
