@@ -38,6 +38,11 @@
       color: #fefefe;
       font-size: 1.5rem;
       margin-top: 0.5rem;
+
+      &::placeholder {
+        color: red;
+        opacity: 0.75;
+      }
     }
   }
 

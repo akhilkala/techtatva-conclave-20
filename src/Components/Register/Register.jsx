@@ -29,15 +29,22 @@ export default function Register() {
 
     if (!phoneRegex.test(form.contact.toLowerCase())) {
       setForm({ ...form, contact: "" });
+      setPlaceholders({ ...placeholders, contact: "Invalid Phone Number" });
     }
 
     if (form.name === "") {
+      setPlaceholders({ ...placeholders, name: "This Field is required" });
     }
 
     if (form.collage === "") {
+      setPlaceholders({ ...placeholders, collage: "This Field is required" });
     }
 
     if (form.registeration === "") {
+      setPlaceholders({
+        ...placeholders,
+        registeration: "This Field is required",
+      });
     }
   };
 

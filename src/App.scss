@@ -50,6 +50,24 @@
 
   &__cards {
   }
+
+  &__swiper {
+    // background-color: red;
+    height: 55vh;
+    margin-top: 2rem;
+  }
+
+  &__slide {
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+
+    &:nth-child(even) {
+      background-color: #fefefe;
+    }
+
+    &:nth-child(odd) {
+      background-color: grey;
+    }
+  }
 }
 
 .ml7 {

@@ -8,6 +8,13 @@ import cards from "./Data";
 
 import anime from "animejs";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.scss";
+
+import SwiperCore, { Navigation, EffectFade } from "swiper";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/effect-fade/effect-fade.scss";
+
 function App() {
   useEffect(() => {
     // Wrap every letter in a span
@@ -29,6 +36,8 @@ function App() {
     });
   }, []);
 
+  SwiperCore.use([Navigation, EffectFade]);
+
   return (
     <div className="app">
       <div className="app__landing">
@@ -42,7 +51,23 @@ function App() {
           </span>
         </h1>
         <h2 className="app__heading-2">TECHTATVA'20 </h2>
-        <div className="app__slideshow"></div>
+        <div className="app__slideshow">
+          <Swiper
+            // spaceBetween={50}
+            effect="fade"
+            slidesPerView={1}
+            navigation
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            className="app__swiper"
+          >
+            <SwiperSlide className="app__slide">Slide 1</SwiperSlide>
+            <SwiperSlide className="app__slide">Slide 2</SwiperSlide>
+            <SwiperSlide className="app__slide">Slide 3</SwiperSlide>
+            <SwiperSlide className="app__slide">Slide 4</SwiperSlide>
+            ...
+          </Swiper>
+        </div>
         <div className="app__down-arrow"></div>
       </div>
       <h2 className="app__lineup">LINEUP</h2>
