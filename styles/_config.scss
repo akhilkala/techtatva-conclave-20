@@ -29,6 +29,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Atami, sans-serif, serif;
 }
 
 ::-webkit-scrollbar {
@@ -50,6 +51,20 @@ body {
   background-color: $body-bg;
   color: $text-color;
   overflow-x: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 34.96%;
+    right: -31.71%;
+    top: 0%;
+    bottom: 0.15%;
+    background: url("../assets/background.svg");
+    width: 1250px;
+    height: 2903px;
+    z-index: -1;
+    display: none;
+  }
 }
 
 a {

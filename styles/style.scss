@@ -3,15 +3,140 @@
 @import "_card";
 @import "_register";
 
+@import "./config";
+@import "./respond";
+
+@font-face {
+  font-family: Atami;
+  src: url("../fonts/Atami-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Atami;
+  font-weight: bold;
+  src: url("../fonts/Atami-Bold.otf") format("opentype");
+}
+
 .swiper-slide {
   //   height: 100%;
-  background-color: lightblue;
+  display: flex;
+  padding: 0 5rem 0 0;
+
+  @include respond(large-phone2) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem 0 0;
+
+    @include respond(large-phone2) {
+      padding: 0;
+    }
+  }
+
+  &__left {
+    img {
+      // background-color: red;
+      max-height: 49vh;
+
+      @include respond(large-phone2) {
+        width: 100%;
+      }
+
+      @include respond(medium-phon2) {
+        transform: scale(0.75);
+      }
+    }
+  }
+
+  &__name {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: right;
+
+    @include respond(tab-land2) {
+      font-size: 3rem;
+    }
+
+    @include respond(large-phone2) {
+      text-align: center;
+      padding: 1rem 2rem;
+
+      font-size: 5rem;
+    }
+  }
+
+  &__desc {
+    font-size: 2rem;
+    text-align: right;
+
+    @include respond(tab-land2) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(large-phone2) {
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 3rem;
+    }
+
+    @include respond(medium-phon2) {
+      display: none;
+    }
+  }
+
+  &--1 {
+    @include gradient(1);
+  }
+
+  &--2 {
+    @include gradient(2);
+  }
 }
 
 .swiper-wrapper {
+  position: relative;
 }
 
 .swiper-container {
   margin-top: 4rem;
   height: 48vh;
+  // height: max-content;
+
+  @include respond(large-phone2) {
+    height: 85vh;
+  }
+
+  @include respond(medium-phon2) {
+    height: 65vh;
+  }
+}
+
+.swiper-button {
+  &-next {
+    margin: 2rem;
+    &::after {
+      color: #fefefe;
+      transform: scale(1.75);
+      text-shadow: 0.05rem 0.05rem 0.2rem #21212144;
+    }
+  }
+
+  &-prev {
+    margin: 2rem;
+    &::after {
+      color: #fefefe;
+      transform: scale(1.75);
+      text-shadow: 0.05rem 0.05rem 0.2rem #21212144;
+    }
+  }
 }

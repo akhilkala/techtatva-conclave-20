@@ -13,8 +13,22 @@
     }
   }
 
+  @if $breakpoint== tiny-phone2 {
+    @media (max-width: 400px) {
+      //380px
+      @content;
+    }
+  }
+
   @if $breakpoint== small-phone {
     @media (max-width: 30.625em) {
+      //490px
+      @content;
+    }
+  }
+
+  @if $breakpoint== small-phone2 {
+    @media (max-width: 420px) {
       //490px
       @content;
     }
@@ -34,8 +48,22 @@
     }
   }
 
+  @if $breakpoint== medium-phon2 {
+    @media (max-width: 680px) {
+      //650px
+      @content;
+    }
+  }
+
   @if $breakpoint== large-phone {
     @media (max-width: 47.5em) {
+      //760px
+      @content;
+    }
+  }
+
+  @if $breakpoint== large-phone2 {
+    @media (max-width: 840px) {
       //760px
       @content;
     }
@@ -48,8 +76,22 @@
     }
   }
 
+  @if $breakpoint== tab-por2 {
+    @media (max-width: 1150px) {
+      //1200px
+      @content;
+    }
+  }
+
   @if $breakpoint== tab-land {
     @media (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+
+  @if $breakpoint== tab-land2 {
+    @media (max-width: 1296px) {
       //1200px
       @content;
     }

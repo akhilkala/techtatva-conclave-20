@@ -2,5 +2,15 @@
 
 $body-bg: #151515;
 $text-color: #fefefe;
-$orange: #ff9900;
+$orange: #ff4d22;
 $font-family: "Poppins";
+
+@mixin gradient($case) {
+  @if $case== 1 {
+    background: linear-gradient(98deg, #ee5b23 0%, #ee1f50 100%);
+  }
+
+  @if $case== 2 {
+    background: linear-gradient(82deg, #c62f88 0%, #9b30b6 100%);
+  }
+}

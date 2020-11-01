@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Manipal Conclave | TechTatva '20</title>
     <link rel="stylesheet" href="styles/style.css">
 <script defer src="scripts/script.js"></script>
 
@@ -17,27 +17,45 @@
     <div class="app">
         <div class="app__landing">
           <header class="app__header">
-            <div class="app__logo"></div>
+            <div class="app__left">
+              <img class="app__logo" src="../assets/logo.svg" alt="TT">
+              <img class="app__logo-text" src="../assets/logoText.svg" alt="TechTatva 2020">
+            </div>
+            <div class="app__right">
+              <img class="app__shield" src="../assets/shield.svg" alt="SHIELD">
+              <!-- <img class="app__mic" src="../assets/mic.svg" alt="MIC"> -->
+            </div>
             <!-- <button class="app__cta">GET PASSES</button> -->
           </header>
-          <h1 class="ml7">
-            <span class="text-wrapper">
-              <span class="letters">THE MANIPAL CONCLAVE</span>
-            </span>
-          </h1>
-          <h2 class="app__heading-2">TECHTATVA '20 </h2>
+          <div class="app__heading">
+            The 
+            <span>Manipal</span>
+             Conclave 2020
+          </div>
+          <!-- <h2 class="app__heading-2">TECHTATVA '20 </h2> -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
-                  <div class="swiper-slide">Slide 10</div>
+                  <div class="swiper-slide swiper-slide--1">
+                    <div class="swiper-slide__left swiper-slide__left--1">
+                      <img src="./assets/Banmali.svg" alt="Ahsaas" srcset="">
+                    </div>
+                    <div class="swiper-slide__right">
+                      <h2 class="swiper-slide__name">Banmali Agrawala</h2>
+                      <p class="swiper-slide__desc">President of Infrastructure, Defence & Aerospace,  and Global Corporate Affairs at Tata Sons Pvt. Ltd.</p>
+                    </div>
+
+                  </div>
+                  <div class="swiper-slide swiper-slide--2">
+                    <div class="swiper-slide__left swiper-slide__left--2">
+                      <img src="./assets/Ahsaas.svg" alt="Ahsaas" srcset="">
+                    </div>
+                    <div class="swiper-slide__right ">
+                      <h2 class="swiper-slide__name">Ahsaas Channa</h2>
+                      <p class="swiper-slide__desc">Ahsaas Channa is the tranformation of Indian Entertainment personified: from films to digital content, she had done it all</p>
+                    </div>
+                  </div>
+                  <!-- <div class="swiper-slide swiper-slide--3">Slide 3</div>
+                  <div class="swiper-slide swiper-slide--4">Slide 4</div> -->
                 </div>
                 <!-- Add Pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
@@ -52,68 +70,52 @@
         <div class="app__cards">
 
 
-            <div class="card">
-                <div
-                  class="card__image-container"
-                >
-                  <div class="card__image"></div>
-                </div>
-                <div class="card__box">
-                  <div class="card__name">{name}</div>
-                  <p class="card__description">{description}</p>
-                  <div class="card__time">
-                    <i class="far fa-calendar"></i> <span>{time}</span>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="card card--o">
-                <div
-                  class="card__image-container"
-                >
-                  <div class="card__image"></div>
-                </div>
-                <div class="card__box">
-                  <div class="card__name">{name}</div>
-                  <p class="card__description">{description}</p>
-                  <div class="card__time">
-                    <i class="far fa-calendar"></i> <span>{time}</span>
-                  </div>
-                </div>
-              </div>
-
               <div class="card">
                 <div
                   class="card__image-container"
                 >
-                  <div class="card__image"></div>
+
+           <div class="card__image-square">
+             <div class="card__image-bg"></div>
+             <img src="./assets/Banmali2.svg" alt="">
+           </div>
+
                 </div>
                 <div class="card__box">
-                  <div class="card__name">{name}</div>
-                  <p class="card__description">{description}</p>
-                  <div class="card__time">
+                  <h2 class="card__name"> <span>Mr. Banmali </span>Agrawal</h2>
+                  <p class="card__description">Mr. Agrawala is the President, Infrastructure and Defence & Aerospace at Tata Sons Private Limited. He has been the President and CEO of GE, South Asia. Prior to GE, he was Executive Director (BD & Strategy) and a member of the Board of Tata Power. <br>
+                    He is a Mechanical Engineering from Mangalore University and an alumni of the Harvard Business School.
+                    </p>
+                  <!-- <div class="card__time">
                     <i class="far fa-calendar"></i> <span>{time}</span>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
               <div class="card card--o">
                 <div
-                  class="card__image-container"
-                >
-                  <div class="card__image"></div>
-                </div>
+                class="card__image-container"
+              >
+
+         <div class="card__image-square">
+           <div class="card__image-bg"></div>
+           <img src="./assets/Ahsaas2.svg" alt="">
+         </div>
+
+              </div>
                 <div class="card__box">
-                  <div class="card__name">{name}</div>
-                  <p class="card__description">{description}</p>
-                  <div class="card__time">
+                  <div class="card__name"> <span> Ahsaas </span>Channa</div>
+                  <p class="card__description">Entertainment industry is booming in the modern era. People are glued to their screens more than ever before. As a result, many talented youngsters have made a successful career out of acting.  <br>
+                    One such famous young actress is, Ahsaas Channa.
+                    This digital darling, has been working in the industry since quite young. From acting with SRK and Amitabh in in Kabhi Alvida Naa Kehna at 6 to ruling the Indian Web Industry at 20, Ahsaas Channa has come a long way.
+                    </p>
+                  <!-- <div class="card__time">
                     <i class="far fa-calendar"></i> <span>{time}</span>
-                  </div>
+                  </div> -->
                 </div>
               </div>
         </div>
-        <form id="form" action="/" method="post" onsubmit="handleSubmit(event)"  class="register__form">
+        <form id="form"  onsubmit="handleSubmit(event)"  class="register__form">
             <h1 class="register__title">REGISTER</h1>
             <div class="register__inputs">
                 <div class="register__input">
@@ -174,49 +176,27 @@
                     />
                   </div>
             </div>
-            <button type="submit" class="register__submit">SUBMIT</button>
+            <button class="register__submit">SUBMIT</button>
           </form>
 
           <script  src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
           <script>
 
             let swiper = new Swiper('.swiper-container', {
             //   spaceBetween: 30,
               centeredSlides: true,
+              loop: true,
               autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
-              },
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
               },
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               },
-            });
-
-
-            let textWrapper = document.querySelector('.ml7 .letters');
-            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-            anime.timeline()
-            .add({
-                targets: '.ml7 .letter',
-                translateY: ["1.1em", 0],
-                translateX: ["0.55em", 0],
-                translateZ: 0,
-                rotateZ: [180, 0],
-                duration: 750,
-                easing: "easeOutExpo",
-                delay: (el, i) => 50 * i
-            })
-                        
+            });     
           </script>
   </div>
       </div>
