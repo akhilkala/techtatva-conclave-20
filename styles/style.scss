@@ -1,0 +1,17 @@
+@import "_config";
+@import "_app";
+@import "_card";
+@import "_register";
+
+.swiper-slide {
+  //   height: 100%;
+  background-color: lightblue;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-container {
+  margin-top: 4rem;
+  height: 48vh;
+}

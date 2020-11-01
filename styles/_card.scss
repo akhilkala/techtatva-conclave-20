@@ -1,5 +1,5 @@
-@import "../../BaseStyles/respond";
-@import "../../BaseStyles/constants";
+@import "./respond";
+@import "./constants";
 
 .card {
   min-height: 40vh;
@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     @include respond(tab-land) {
       order: -1 !important;
     }
@@ -40,6 +41,7 @@
     margin-bottom: 1rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
+    color: $orange;
 
     @include respond(tab-land) {
       text-align: center;
@@ -69,5 +71,11 @@
     @include respond(tab-land) {
       text-align: center;
     }
+  }
+}
+
+.card--o {
+  .card__image-container {
+    order: 2;
   }
 }

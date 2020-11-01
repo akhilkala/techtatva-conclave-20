@@ -1,5 +1,5 @@
-@import "./BaseStyles/constants";
-@import "./BaseStyles/respond";
+@import "./constants";
+@import "./respond";
 
 .app {
   &__landing {
@@ -10,6 +10,7 @@
     min-height: 10vh;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 3rem;
   }
@@ -66,18 +67,6 @@
       margin-top: 3rem;
     }
   }
-
-  &__slide {
-    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
-
-    &:nth-child(even) {
-      background-color: #fefefe;
-    }
-
-    &:nth-child(odd) {
-      background-color: grey;
-    }
-  }
 }
 
 .ml7 {
@@ -87,6 +76,7 @@
   text-align: center;
   font-family: $font-family, sans-serif, serif;
   letter-spacing: 1px;
+  color: $orange;
 }
 .ml7 .text-wrapper {
   position: relative;

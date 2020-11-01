@@ -1,1 +1,0 @@
-# React+Sass Boilerplate

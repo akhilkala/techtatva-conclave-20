@@ -1,4 +1,4 @@
-@import "../../BaseStyles/constants";
+@import "./constants";
 
 .register {
   margin: 6rem 0 1rem 0;
@@ -6,17 +6,19 @@
 
   &__form {
     width: 50%;
-    min-width: 85vw;
+    min-width: 80vw;
     margin: auto;
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
     font-family: $font-family, sans-serif, serif;
     padding: 1rem 3rem;
     text-align: center;
+    margin-bottom: 3rem;
   }
 
   &__title {
     text-align: center;
     font-size: 4rem;
+    color: $orange;
   }
 
   &__inputs {
@@ -50,12 +52,13 @@
   &__submit {
     margin: auto;
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     background-color: inherit;
     color: #fefefe;
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin: 1rem auto;
     transition: 0.2s all;
+    background-color: $orange;
 
     &:hover {
       transform: translateY(-0.75rem);

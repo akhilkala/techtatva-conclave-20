@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+<script defer src="scripts/script.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="app__landing">
+          <header class="app__header">
+            <div class="app__logo"></div>
+            <!-- <button class="app__cta">GET PASSES</button> -->
+          </header>
+          <h1 class="ml7">
+            <span class="text-wrapper">
+              <span class="letters">THE MANIPAL CONCLAVE</span>
+            </span>
+          </h1>
+          <h2 class="app__heading-2">TECHTATVA '20 </h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                  <div class="swiper-slide">Slide 10</div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            
+          <div class="app__down-arrow"></div>
+        </div>
+        <h2 class="app__lineup">LINEUP</h2>
+        <div class="app__cards">
+
+
+            <div class="card">
+                <div
+                  class="card__image-container"
+                >
+                  <div class="card__image"></div>
+                </div>
+                <div class="card__box">
+                  <div class="card__name">{name}</div>
+                  <p class="card__description">{description}</p>
+                  <div class="card__time">
+                    <i class="far fa-calendar"></i> <span>{time}</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card card--o">
+                <div
+                  class="card__image-container"
+                >
+                  <div class="card__image"></div>
+                </div>
+                <div class="card__box">
+                  <div class="card__name">{name}</div>
+                  <p class="card__description">{description}</p>
+                  <div class="card__time">
+                    <i class="far fa-calendar"></i> <span>{time}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div
+                  class="card__image-container"
+                >
+                  <div class="card__image"></div>
+                </div>
+                <div class="card__box">
+                  <div class="card__name">{name}</div>
+                  <p class="card__description">{description}</p>
+                  <div class="card__time">
+                    <i class="far fa-calendar"></i> <span>{time}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card--o">
+                <div
+                  class="card__image-container"
+                >
+                  <div class="card__image"></div>
+                </div>
+                <div class="card__box">
+                  <div class="card__name">{name}</div>
+                  <p class="card__description">{description}</p>
+                  <div class="card__time">
+                    <i class="far fa-calendar"></i> <span>{time}</span>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <form id="form" action="/" method="post" onsubmit="handleSubmit(event)"  class="register__form">
+            <h1 class="register__title">REGISTER</h1>
+            <div class="register__inputs">
+                <div class="register__input">
+                    <label for="name">Name:</label>
+                    <input
+                      name="name"
+                      id="name"
+                      type="text"
+                    />
+                  </div>
+                  <div class="register__input">
+                    <label for="email">Email ID:</label>
+                    <input
+                      name="email"
+                      id="email"
+                      type="text"
+                    />
+                  </div>
+                  <div class="register__input">
+                    <label for="phone">Contact no:</label>
+                    <input
+                      name="phone"
+                      id="phone"
+                      type="text"
+                    />
+                  </div>
+
+                  <div class="register__input">
+                    <label for="collage">College name:</label>
+                    <input
+                      name="collage"
+                      id="collage"
+                      type="text"
+                    />
+                  </div>
+                  <div class="register__input">
+                    <label for="reg">Reg no. (For MAHE students only):</label>
+                    <input
+                      name="reg"
+                      id="reg"
+                      type="text"
+                    />
+                  </div>
+                  <div class="register__input">
+                    <label for="state">State:</label>
+                    <input
+                      name="state"
+                      id="state"
+                      type="text"
+                    />
+                  </div>
+                  <div class="register__input">
+                    <label for="country">Country:</label>
+                    <input
+                      name="country"
+                      id="country"
+                      type="text"
+                    />
+                  </div>
+            </div>
+            <button type="submit" class="register__submit">SUBMIT</button>
+          </form>
+
+          <script  src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script  src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+          <script>
+
+            let swiper = new Swiper('.swiper-container', {
+            //   spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+
+
+            let textWrapper = document.querySelector('.ml7 .letters');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline()
+            .add({
+                targets: '.ml7 .letter',
+                translateY: ["1.1em", 0],
+                translateX: ["0.55em", 0],
+                translateZ: 0,
+                rotateZ: [180, 0],
+                duration: 750,
+                easing: "easeOutExpo",
+                delay: (el, i) => 50 * i
+            })
+                        
+          </script>
+  </div>
+      </div>
+
+</body>
+
+</html>
