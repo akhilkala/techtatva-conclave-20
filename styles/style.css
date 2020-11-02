@@ -425,6 +425,19 @@ button:focus {
   font-size: 1.5rem;
 }
 
+.register__input label {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -webkit-transform: translateY(3.35rem) scale(0);
+          transform: translateY(3.35rem) scale(0);
+  -webkit-transition: 0.35s all;
+  transition: 0.35s all;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .register__input input {
   background-color: #222;
   padding: 1rem 0.5rem;
@@ -434,23 +447,26 @@ button:focus {
 }
 
 .register__input input::-webkit-input-placeholder {
-  color: red;
-  opacity: 0.75;
+  color: #fefefe;
 }
 
 .register__input input:-ms-input-placeholder {
-  color: red;
-  opacity: 0.75;
+  color: #fefefe;
 }
 
 .register__input input::-ms-input-placeholder {
-  color: red;
-  opacity: 0.75;
+  color: #fefefe;
 }
 
 .register__input input::placeholder {
-  color: red;
-  opacity: 0.75;
+  color: #fefefe;
+}
+
+.register__input input:not(:placeholder-shown) + label {
+  opacity: 1;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+  visibility: visible;
 }
 
 .register__submit {

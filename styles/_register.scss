@@ -40,6 +40,15 @@
     text-align: left;
     font-size: 1.5rem;
 
+    label {
+      order: -1;
+      transform: translateY(3.35rem) scale(0);
+      // opacity: 0;
+      transition: 0.35s all;
+      // visibility: hidden;
+      width: max-content;
+    }
+
     input {
       background-color: #222;
       padding: 1rem 0.5rem;
@@ -48,8 +57,15 @@
       margin-top: 0.5rem;
 
       &::placeholder {
-        color: red;
-        opacity: 0.75;
+        color: #fefefe;
+      }
+
+      &:not(:placeholder-shown) {
+        & + label {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+          visibility: visible;
+        }
       }
     }
   }
