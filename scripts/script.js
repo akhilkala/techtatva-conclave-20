@@ -80,5 +80,9 @@ inputs.forEach((imp) =>
     if (isFull()) {
       submit.disabled = false;
     }
+
+    if (!imp.value) {
+      submit.disabled = true;
+    }
   })
 );
