@@ -76,6 +76,13 @@
     }
   }
 
+  @if $breakpoint== tab-por3 {
+    @media (max-width: 1085px) {
+      //1200px
+      @content;
+    }
+  }
+
   @if $breakpoint== tab-por2 {
     @media (max-width: 1150px) {
       //1200px

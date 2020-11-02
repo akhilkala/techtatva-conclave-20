@@ -10,6 +10,16 @@
   display: flex;
   padding: 1rem 0rem;
 
+  &--coming {
+    min-height: 60vh !important;
+  }
+
+  &__date {
+    font-family: $font-family;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
   &__image-square {
     height: 18rem;
     width: 18rem;
@@ -24,14 +34,18 @@
     // background-color: red;
 
     img {
-      height: 24rem;
-      width: 24rem;
+      height: 20rem;
+      width: 20rem;
       // transform: translateY(-2rem);
       transition: 0.5s all;
 
       transform: translateY(18rem);
 
       // background-color: red;
+
+      &:nth-child(3) {
+        transform: translate(-1rem, 5rem);
+      }
     }
   }
 
@@ -49,7 +63,6 @@
   }
 
   &__image-bg {
-    @include gradient(2);
     height: 18rem;
     width: 18rem;
     position: absolute;
@@ -58,6 +71,30 @@
     transform: translate(-50%, -50%);
     z-index: -1;
     border-radius: 50%;
+
+    &--1 {
+      @include gradient(3);
+    }
+
+    &--2 {
+      @include gradient(5);
+    }
+
+    &--3 {
+      @include gradient(4);
+    }
+
+    &--4 {
+      @include gradient(1);
+    }
+
+    &--5 {
+      @include gradient(2);
+    }
+
+    &--6 {
+      @include gradient(6);
+    }
   }
 
   // &__image-bg {
@@ -131,6 +168,12 @@
     }
   }
 
+  .card__date {
+    @include respond(tab-land) {
+      text-align: center !important;
+    }
+  }
+
   &__time {
     margin-top: 2rem;
     font-size: 1.5rem;
@@ -156,6 +199,10 @@
   }
 
   .card__name {
+    text-align: right;
+  }
+
+  .card__date {
     text-align: right;
   }
 }

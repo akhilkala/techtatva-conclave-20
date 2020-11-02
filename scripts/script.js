@@ -6,16 +6,6 @@ let data = {};
 // const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 // const phoneRegex = /^\d{10}$/;
 
-const isFull = () => {
-  flag = true;
-
-  inputs.forEach((imp) => {
-    if (!imp.value) flag = false;
-  });
-
-  return flag;
-};
-
 const handleSubmit = (e) => {
   e.preventDefault();
 
@@ -63,7 +53,7 @@ function isScrolledIntoView(el) {
   let rect = el.getBoundingClientRect();
   let elemTop = rect.top;
   let elemBottom = rect.bottom;
-  let isVisible = elemTop >= 0 && elemBottom <= window.innerHeight;
+  let isVisible = elemTop >= 0 && elemBottom <= window.innerHeight + 400;
   return isVisible;
 }
 
@@ -75,14 +65,31 @@ window.addEventListener("scroll", function () {
 
 const submit = document.querySelector(".register__submit");
 
-inputs.forEach((imp) =>
-  imp.addEventListener("change", () => {
-    if (isFull()) {
-      submit.disabled = false;
-    }
+// const isFull = () => {
+//   flag = true;
 
-    if (!imp.value) {
-      submit.disabled = true;
-    }
-  })
-);
+//   inputs.forEach((imp) => {
+//     if (!imp.value) flag = false;
+//   });
+
+//   return flag;
+// };
+
+// inputs.forEach((imp) =>
+//   imp.addEventListener("change", () => {
+//     if (isFull()) {
+//       submit.disabled = false;
+//     }
+
+//     if (!imp.value) {
+//       submit.disabled = true;
+//     }
+//   })
+// );
+
+// tik talk yajat dhingra  6:30pm
+// satish 5:30
+// avlon
+//  banmali
+//  ahsaas 5:45
+//  coming soon

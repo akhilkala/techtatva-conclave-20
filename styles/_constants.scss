@@ -13,4 +13,20 @@ $font-family: "Poppins";
   @if $case== 2 {
     background: linear-gradient(82deg, #c62f88 0%, #9b30b6 100%);
   }
+
+  @if $case== 3 {
+    background: linear-gradient(81.89deg, #dcd5df 1.14%, #cd8ee8 100%);
+  }
+
+  @if $case== 4 {
+    background: linear-gradient(98deg, #cccccc 0%, #44fb77 100%);
+  }
+
+  @if $case== 5 {
+    background: linear-gradient(82deg, #78cd43 0%, #faff00 100%);
+  }
+
+  @if $case== 6 {
+    background: linear-gradient(90deg, #eaecc6 0%, #78e5ff 100%);
+  }
 }

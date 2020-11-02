@@ -34,8 +34,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 0 5rem 0 0;
+    flex: 1;
 
     @include respond(large-phone2) {
       padding: 0;
@@ -50,12 +50,29 @@
     @include respond(large-phone2) {
       order: 1;
     }
+
+    .tik {
+      display: block;
+      height: 27vh;
+      transform: translateY(21vh);
+
+      @include respond(tab-por3) {
+        height: 20vh;
+        transform: translateY(28vh);
+      }
+
+      @include respond(large-phone2) {
+        transform: translateY(0);
+        height: 27vh;
+      }
+    }
+
     img {
       // background-color: red;
       max-height: 49vh;
 
       @include respond(large-phone2) {
-        // width: 100%;
+        width: 100%;
         // background-color: red;
       }
 
@@ -80,6 +97,21 @@
       padding: 1rem 2rem;
 
       font-size: 4rem;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include respond(large-phone2) {
+      justify-content: center;
+    }
+
+    img {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1.5rem;
+      transform: translateY(0.15rem);
     }
   }
 
@@ -108,6 +140,26 @@
 
   &--2 {
     @include gradient(2);
+  }
+
+  &--3 {
+    @include gradient(3);
+  }
+
+  &--4 {
+    @include gradient(4);
+  }
+
+  &--5 {
+    @include gradient(5);
+  }
+
+  &--6 {
+    @include gradient(6);
+  }
+
+  &--b {
+    color: $body-bg;
   }
 }
 
@@ -187,4 +239,14 @@
 
 .swiper-pagination-bullet-active {
   background-color: #fefefe !important;
+}
+
+.app {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.tik-talk {
+  display: none;
 }
