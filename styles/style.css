@@ -65,6 +65,7 @@ svg {
   width: 1250px;
   height: 2903px;
   z-index: -1;
+  display: none;
 }
 
 body {
@@ -537,6 +538,7 @@ svg {
   width: 1250px;
   height: 2903px;
   z-index: -1;
+  display: none;
 }
 
 body {
