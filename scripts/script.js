@@ -46,3 +46,23 @@ const handleSubmit = (e) => {
     body: JSON.stringify(data), // body data type must match "Content-Type" header
   }).then((res) => alert(res.message));
 };
+
+const lineup_array = document.querySelectorAll(".card");
+
+function isScrolledIntoView(el) {
+  let rect = el.getBoundingClientRect();
+  let elemTop = rect.top;
+  let elemBottom = rect.bottom;
+  let isVisible = elemTop >= 0 && elemBottom <= window.innerHeight;
+
+  return isVisible;
+}
+
+window.addEventListener("scroll", function () {
+  for (let elem of lineup_array) {
+    if (isScrolledIntoView(elem))
+      console.log(
+        elem.children[0].children[0].children[1].classList.add("scrolled")
+      );
+  }
+});

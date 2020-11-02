@@ -47,6 +47,18 @@ html {
   background-color: #ebf7fd;
 }
 
+svg {
+  position: absolute;
+  left: 34.96%;
+  right: -31.71%;
+  top: 0%;
+  bottom: 0.15%;
+  width: 1250px;
+  height: 2903px;
+  z-index: -1;
+  // fill: red;
+}
+
 body {
   background-color: $body-bg;
   color: $text-color;

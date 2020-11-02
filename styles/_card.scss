@@ -1,6 +1,10 @@
 @import "./respond";
 @import "./constants";
 
+.scrolled {
+  transform: translateY(-2rem) !important;
+}
+
 .card {
   min-height: 40vh;
   display: flex;
@@ -22,7 +26,10 @@
     img {
       height: 24rem;
       width: 24rem;
-      transform: translateY(-2rem);
+      // transform: translateY(-2rem);
+      transition: 0.5s all;
+
+      transform: translateY(18rem);
       // background-color: red;
     }
   }

@@ -56,6 +56,17 @@ html {
   background-color: #ebf7fd;
 }
 
+svg {
+  position: absolute;
+  left: 34.96%;
+  right: -31.71%;
+  top: 0%;
+  bottom: 0.15%;
+  width: 1250px;
+  height: 2903px;
+  z-index: -1;
+}
+
 body {
   background-color: #151515;
   color: #fefefe;
@@ -216,6 +227,11 @@ button:focus {
   }
 }
 
+.scrolled {
+  -webkit-transform: translateY(-2rem) !important;
+          transform: translateY(-2rem) !important;
+}
+
 .card {
   min-height: 40vh;
   display: -webkit-box;
@@ -236,8 +252,10 @@ button:focus {
 .card__image-square img {
   height: 24rem;
   width: 24rem;
-  -webkit-transform: translateY(-2rem);
-          transform: translateY(-2rem);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateY(18rem);
+          transform: translateY(18rem);
 }
 
 .card__image-container {
@@ -508,6 +526,17 @@ html {
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: #ebf7fd;
+}
+
+svg {
+  position: absolute;
+  left: 34.96%;
+  right: -31.71%;
+  top: 0%;
+  bottom: 0.15%;
+  width: 1250px;
+  height: 2903px;
+  z-index: -1;
 }
 
 body {
