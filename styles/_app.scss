@@ -3,7 +3,7 @@
 
 .app {
   &__landing {
-    // min-height: 100vh;
+    // height: 100vh;
   }
 
   &__header {
@@ -16,6 +16,14 @@
     @include respond(small-phone) {
       // transform: scale(0.7);
       padding: 3rem 2rem;
+      margin-bottom: -4rem;
+    }
+  }
+
+  &__left {
+    @include respond(small-phone) {
+      transform: scale(0.65) translateX(-4rem);
+      // padding: 3rem 2rem;
     }
   }
 
@@ -25,6 +33,11 @@
     @include respond(tiny-phone2) {
       // transform: scale(0.7);
       display: none;
+    }
+
+    @include respond(small-phone) {
+      transform: scale(0.5);
+      // padding: 3rem 2rem;
     }
 
     &::after {

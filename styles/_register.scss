@@ -93,31 +93,30 @@
   // }
 
   &__submit {
-    display: inline-block;
-    margin: 1rem auto;
-    font-size: 1.75rem;
+    margin: auto;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
     padding: 0.5rem 1rem;
+    background-color: inherit;
     color: #fefefe;
-    text-transform: uppercase;
-
-    // border: 1px solid #fefefe;
-
-    background: linear-gradient(120deg, #222 50%, $orange 50%);
-    background-size: 225%;
-    transition: 0.4s all;
-
-    span {
-      margin-right: 1.5rem;
-      display: inline-block;
-    }
+    font-size: 1.75rem;
+    margin: 1rem auto;
+    transition: 0.2s all;
+    background-color: $orange;
 
     &:hover {
-      background-position: 100%;
-      color: #fefefe;
+      transform: translateY(-0.75rem);
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.45);
+    }
 
-      // border: 1px solid $orange;
+    &:active {
+      transform: translateY(-0.5rem);
+      box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.45);
+    }
 
-      //cHANGE THE POSITION OF THE BACKGROUND
+    &:disabled {
+      pointer-events: none;
+      opacity: 0.5;
+      background-color: #222;
     }
   }
 }

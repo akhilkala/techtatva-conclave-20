@@ -47,7 +47,7 @@ const handleSubmit = (e) => {
   }).then((res) => alert(res.message));
 };
 
-const lineup_array = document.querySelectorAll(".card");
+const lineup_array = document.querySelectorAll(".card img");
 
 function isScrolledIntoView(el) {
   let rect = el.getBoundingClientRect();
@@ -59,9 +59,8 @@ function isScrolledIntoView(el) {
 
 window.addEventListener("scroll", function () {
   for (let elem of lineup_array) {
-    if (isScrolledIntoView(elem))
-      console.log(
-        elem.children[0].children[0].children[1].classList.add("scrolled")
-      );
+    if (isScrolledIntoView(elem)) console.log(elem.classList.add("scrolled"));
   }
 });
+
+const submit = document.querySelector(".register__submit");

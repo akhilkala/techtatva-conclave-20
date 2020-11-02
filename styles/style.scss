@@ -43,16 +43,20 @@
   }
 
   &__left {
+    // background-color: red;
+    display: flex;
+    justify-content: flex-start;
     img {
       // background-color: red;
       max-height: 49vh;
 
       @include respond(large-phone2) {
-        width: 100%;
+        // width: 100%;
+        // background-color: red;
       }
 
       @include respond(medium-phon2) {
-        transform: scale(0.75);
+        // transform: scale(0.75);
       }
     }
   }
@@ -71,7 +75,7 @@
       text-align: center;
       padding: 1rem 2rem;
 
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 
@@ -124,6 +128,10 @@
 .swiper-button {
   &-next {
     margin: 2rem;
+
+    @include respond(large-phone2) {
+      display: none;
+    }
     &::after {
       color: #fefefe;
       transform: scale(1.75);
@@ -133,15 +141,31 @@
         display: none;
       }
     }
+
+    &::before {
+      @include respond(large-phone2) {
+        display: none;
+      }
+    }
   }
 
   &-prev {
     margin: 2rem;
+
+    @include respond(large-phone2) {
+      display: none;
+    }
     &::after {
       color: #fefefe;
       transform: scale(1.75);
       text-shadow: 0.05rem 0.05rem 0.2rem #21212144;
 
+      @include respond(large-phone2) {
+        display: none;
+      }
+    }
+
+    &::before {
       @include respond(large-phone2) {
         display: none;
       }
