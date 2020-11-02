@@ -128,6 +128,10 @@
       color: #fefefe;
       transform: scale(1.75);
       text-shadow: 0.05rem 0.05rem 0.2rem #21212144;
+
+      @include respond(large-phone2) {
+        display: none;
+      }
     }
   }
 
@@ -137,6 +141,22 @@
       color: #fefefe;
       transform: scale(1.75);
       text-shadow: 0.05rem 0.05rem 0.2rem #21212144;
+
+      @include respond(large-phone2) {
+        display: none;
+      }
     }
   }
+}
+
+.swiper-pagination {
+  display: none;
+
+  @include respond(large-phone2) {
+    display: block;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fefefe !important;
 }

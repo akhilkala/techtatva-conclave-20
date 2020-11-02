@@ -768,6 +768,12 @@ button:focus {
   text-shadow: 0.05rem 0.05rem 0.2rem #21212144;
 }
 
+@media (max-width: 840px) {
+  .swiper-button-next::after {
+    display: none;
+  }
+}
+
 .swiper-button-prev {
   margin: 2rem;
 }
@@ -777,5 +783,25 @@ button:focus {
   -webkit-transform: scale(1.75);
           transform: scale(1.75);
   text-shadow: 0.05rem 0.05rem 0.2rem #21212144;
+}
+
+@media (max-width: 840px) {
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fefefe !important;
 }
 /*# sourceMappingURL=style.css.map */
