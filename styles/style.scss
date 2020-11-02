@@ -65,6 +65,36 @@
         transform: translateY(0);
         height: 27vh;
       }
+
+      @include respond(phone) {
+        transform: translateY(5vh);
+        height: 27vh;
+      }
+
+      @include respond(small-phone2) {
+        transform: translateY(8vh);
+        height: 27vh;
+      }
+    }
+
+    .soon {
+      display: block;
+      height: 45vh;
+      transform: translateY(5vh);
+
+      @include respond(tab-por3) {
+        height: 34vh;
+        transform: translateY(15vh);
+      }
+
+      @include respond(large-phone2) {
+        transform: translateY(0);
+        height: 27vh;
+      }
+
+      @include respond(small-phone2) {
+        transform: translateY(5vh);
+      }
     }
 
     img {
@@ -247,6 +277,29 @@
   position: relative;
 }
 
-.tik-talk {
-  display: none;
+.one {
+  transform: translateY(1rem) !important;
+}
+.two {
+  transform: translateY(1rem) !important;
+}
+
+.three {
+  transform: translateY(1rem) !important;
+}
+
+.four {
+  transform: translateY(0.5rem) !important;
+}
+
+.five {
+  transform: translateY(0.5rem) !important;
+}
+
+.six {
+  transform: scale(1.5) translateY(0.5rem) !important;
+}
+
+.down {
+  transform: translateY(18rem) !important;
 }

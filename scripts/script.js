@@ -53,13 +53,13 @@ function isScrolledIntoView(el) {
   let rect = el.getBoundingClientRect();
   let elemTop = rect.top;
   let elemBottom = rect.bottom;
-  let isVisible = elemTop >= 0 && elemBottom <= window.innerHeight + 400;
+  let isVisible = elemTop >= 0 && elemBottom <= window.innerHeight + 350;
   return isVisible;
 }
 
 window.addEventListener("scroll", function () {
   for (let elem of lineup_array) {
-    if (isScrolledIntoView(elem)) console.log(elem.classList.add("scrolled"));
+    if (isScrolledIntoView(elem)) console.log(elem.classList.remove("down"));
   }
 });
 
