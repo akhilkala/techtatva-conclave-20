@@ -46,6 +46,10 @@
     // background-color: red;
     display: flex;
     justify-content: flex-start;
+
+    @include respond(large-phone2) {
+      order: 1;
+    }
     img {
       // background-color: red;
       max-height: 49vh;
