@@ -6,6 +6,16 @@ let data = {};
 // const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 // const phoneRegex = /^\d{10}$/;
 
+const isFull = () => {
+  flag = true;
+
+  inputs.forEach((imp) => {
+    if (!imp.value) flag = false;
+  });
+
+  return flag;
+};
+
 const handleSubmit = (e) => {
   e.preventDefault();
 
@@ -64,3 +74,11 @@ window.addEventListener("scroll", function () {
 });
 
 const submit = document.querySelector(".register__submit");
+
+inputs.forEach((imp) =>
+  imp.addEventListener("change", () => {
+    if (isFull()) {
+      submit.disabled = false;
+    }
+  })
+);
